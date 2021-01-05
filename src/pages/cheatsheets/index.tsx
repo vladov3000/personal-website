@@ -1,11 +1,11 @@
 import React from "react";
-import { PageTemplate } from "../../components/PageTemplate";
+import { WebpageTemplate } from "../../components/WebpageTemplate";
 
 const index: React.FC<null> = () => {
   return (
-    <PageTemplate>
+    <WebpageTemplate>
       <p> This is the cheatsheets page </p>
-    </PageTemplate>
+    </WebpageTemplate>
   );
 };
 

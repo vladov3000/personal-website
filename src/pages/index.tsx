@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./home";
 
-const index: React.FC<null> = Home;
+const Index: React.FC<null> = Home;
 
-export default index;
+export default Index;
