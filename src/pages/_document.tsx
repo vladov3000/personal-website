@@ -14,7 +14,7 @@ class MyDocument extends Document {
 
     ctx.renderPage = () =>
       originalRenderPage({
-        enhanceApp: (App) => <> App </>,
+        enhanceApp: (App) => App,
       });
 
     const initialProps = await Document.getInitialProps(ctx);

@@ -29,7 +29,6 @@ const NavLink: React.FC<{ href: string }> = ({ children, ...props }) => {
 };
 
 export const Navbar: React.FC<{}> = () => {
-  // h={["14.0625rem", "4.6875rem", "5.6875rem"]}
   return (
     <Flex
       bgGradient="linear(to-l, yellow.400, pink.500)"
