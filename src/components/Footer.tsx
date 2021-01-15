@@ -1,10 +1,10 @@
-import { Box, Divider, Flex, Text } from "@chakra-ui/react";
+import { Divider, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 
 export const Footer: React.FC<{}> = () => {
   return (
-    <Flex justifyContent="center" mt="0.625rem">
-      <Box w="50%">
+    <Flex justifyContent="center" my="0.625rem">
+      <Flex w="100%" flexDir="column" alignItems="center">
         <Divider />
         <Text color="GrayText">
           Computer icon made by
@@ -21,7 +21,7 @@ export const Footer: React.FC<{}> = () => {
             www.flaticon.com
           </a>
         </Text>
-      </Box>
+      </Flex>
     </Flex>
   );
 };

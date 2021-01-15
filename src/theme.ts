@@ -1,7 +1,12 @@
 import { extendTheme, theme as chakraTheme } from "@chakra-ui/react";
 
+type Theme = typeof chakraTheme;
+
 const myTheme = {
   ...chakraTheme,
+  config: {
+    initialColorMode: "dark",
+  },
   styles: {
     global: {
       "html, body": {
@@ -9,8 +14,8 @@ const myTheme = {
       } as React.CSSProperties,
     },
   },
-} as typeof chakraTheme;
+} as Theme;
 
-const theme = extendTheme(myTheme);
+const theme = extendTheme(myTheme) as Theme;
 
 export default theme;
